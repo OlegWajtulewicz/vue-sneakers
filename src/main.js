@@ -5,7 +5,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import { autoAnimatePlugin } from '@formkit/auto-animate/vue'
 import App from './App.vue'
 
-import store from './store'
+//import store from './store'
 
 import Home from './pages/Home.vue'
 import Favorites from './pages/Favorites.vue'
@@ -21,8 +21,8 @@ const router = createRouter({
     history: createWebHistory(),
     routes,
 })
+//app.mount(store);
 app.use(router)
 // подключение плагина autoAnimate
 app.use(autoAnimatePlugin)
-app.mount(store);
 app.mount('#app')
